@@ -1,0 +1,21 @@
+ <!-- https://api.nasa.gov/planetary/earth/imagery -->
+
+ <!-- API KEY : d0EaapTiAi7a6DZVNyC040kuSJzWCsv08yckD99c -->
+
+// 현재 위치 가져오기
+navigator.geolocation.getCurrentPosition(geoSuccess, getError);
+
+// 가져오기 성공
+function getSuccess(position) {
+// 위도
+const lat = position.coords.latitude;
+// 경도
+const lng = position.coords.logitude;
+// 위도 경도 오차(m)
+const accuracy = Math.floor(position.coords.accuracy);
+}
+
+// 가지오기 실패(거부)
+function getError() {
+alert('Geolocation Error');
+}

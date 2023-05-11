@@ -1,0 +1,381 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Type Selector */
+* {
+  outline: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  *overflow-y: hidden !important;
+}
+body {
+  font-size: 14px;
+  color: #000;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+form,
+fieldset,
+p,
+blockquote,
+button,
+table {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 400;
+}
+img,
+fieldset,
+button {
+  border: 0 none;
+}
+textarea {
+  border: 1px solid #d9d9d9;
+  overflow: auto;
+}
+ul,
+ol {
+  list-style: none;
+}
+input[type="radio"] {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  padding: 0;
+}
+input[type="text"]::-ms-clear {
+  display: none;
+}
+select {
+  vertical-align: middle;
+  border: 1px solid #d9d9d9;
+}
+a {
+  border: 0;
+}
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #da291c;
+  text-decoration: none;
+}
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+em {
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption {
+  display: none;
+}
+fieldset,
+button {
+  border: none;
+}
+hr,
+legend {
+  display: none;
+  clear: both;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+input {
+  padding: 0;
+}
+label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+table caption {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Sub Title */
+h4 {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0px 0 10px 0;
+}
+h5 {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 0 15px 0;
+}
+
+/* 공통 select */
+.selectbox {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 100%;
+  height: 36px;
+  line-height: 34px;
+  vertical-align: middle;
+  background: #fff url(/rem/apply/common/images/img_select.png) no-repeat right
+    center;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: 1px solid #c6c6c6;
+  z-index: 1;
+  *white-space: nowrap;
+  *overflow: auto;
+}
+.selectbox span {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  height: 34px;
+  line-height: 34px;
+  color: #555;
+  font-weight: normal !important;
+  z-index: -1;
+}
+.selectbox select {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  border: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+.selectbox.disabled {
+  background-color: #f0f0f0;
+  border-color: #c6c6c6;
+}
+.selectbox select.disabled {
+  background: transparent !important;
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #c6c6c6;
+  border-radius: 2px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+input[type="text"] {
+  width: 100%;
+  *width: 97%;
+  height: 36px;
+  line-height: 36px;
+  padding: 0px 5px !important;
+  font-size: 14px;
+  color: #666;
+  letter-spacing: 0 !important;
+  vertical-align: middle;
+  border: 1px solid #c6c6c6;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+input[type="text"]::-ms-clear {
+  display: none !important;
+}
+input[type="password"] {
+  width: 100%;
+  *width: 97%;
+  height: 36px;
+  line-height: 36px;
+  padding: 0px 5px !important;
+  font-size: 14px;
+  color: #666;
+  letter-spacing: 0 !important;
+  vertical-align: middle;
+  border: 1px solid #c6c6c6;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  border: none;
+}
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  border: none;
+}
+*:-webkit-auto:fill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed !important;
+  border-spacing: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+hr {
+  display: none;
+}
+caption,
+legend {
+  visibility: hidden;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+iframe {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Scroll or Display or Visibility */
+.wbox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 0px;
+}
+.vbox {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  float: left;
+  position: absolute;
+  overflow: hidden;
+}
+.hbox {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  overflow: hidden;
+}
+.vslider {
+  height: 100%;
+  width: 2px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  overflow: hidden;
+  float: left;
+  position: absolute;
+  text-align: center;
+}
+.hslider {
+  height: 2px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+}
+.sliderghost {
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+.autoscroll {
+  overflow: auto;
+}
+.xscroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.yscroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.hiddenZone {
+  display: none;
+}
+.hiddenZoneV {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  *visibility: hidden;
+}
+
+.inlineBlock {
+  display: inline-block !important;
+}
+.displayZone {
+  display: block;
+}
+
+/* Cursor */
+.cursorP {
+  cursor: pointer !important;
+}
