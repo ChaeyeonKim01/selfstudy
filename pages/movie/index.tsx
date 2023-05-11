@@ -22,6 +22,7 @@ function Movie4() {
 
   useEffect(() => {
     console.log(movieData);
+    console.log("1");
   }, [movieData]);
 
   return (
